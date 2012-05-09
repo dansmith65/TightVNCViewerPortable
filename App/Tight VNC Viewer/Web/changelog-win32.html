@@ -1,0 +1,699 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>TightVNC: Change Log, Win32 Version</title>
+    <link rel="stylesheet" href="tightvnc.css">
+    <meta name="author" content="Constantin Kaplinsky">
+    <meta name="generator" content="XEmacs + Ruby + Guava tools">
+    <meta name="description"
+          content="TightVNC - An enhanced VNC version with many new features, improvements,
+                   optimizations and bugfixes.">
+    <meta name="keywords"
+          content="vnc, remote desktop, remote control, remote administration, compression">
+  </head>
+  <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FDFAEC"
+    link="#9A1614" alink="#FF4040" vlink="#8A7634">
+    <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="8">
+          &nbsp;
+        </td><td valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="16">
+            <tr><td valign="top">
+  <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr><td width="99%">
+      <table width="100%" bgcolor="#C49A82" border="0" cellspacing="0" cellpadding="2">
+        <tr><td align="center" valign="middle">
+          <table width="100%" border="0" bgcolor="#F8EECB" align="center" cellspacing="0"
+            cellpadding="6">
+            <tr><td align="center" valign="middle">
+              <font size="+2"><b>Change Log, Win32 Version</b></font>
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td><td width="1%">&nbsp;
+    </td><td align="right" valign="middle">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="right" valign="middle"><a href="http://www.tightvnc.com/donate.html"><img
+            border="0" hspace="8" src="donate.jpg" width="96" height="32"
+            alt="[DONATE]"></a></td>
+          <td nowrap align="center" valign="middle"><b>Improve TightVNC:</b><br><a
+            href="http://www.tightvnc.com/donate.html">Make a Donation</a>!</td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+  <br>
+  <p>See the <a href="Win32-ChangeLog.txt">text version</a> from which this document was generated.</p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2292">r2292</a></b> | <b>const_k</b> | <font color="#700000"><b>2007-05-01 00:13:55 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/tags/VERSION_1_3_9/vnc_winsrc/:<br>[many files]</font> </li></ul>
+<p><blockquote>
+Merged changes from /orig/branches/BRANCH_1_3_STABLE/vnc_winsrc, revisions 2271:2288. Now I really hope that there will be no more changes in the Windows version of TightVNC 1.3.9. The changes merged here were as follows:
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2288">rev.2288</a>: Updated project files of Visual C++ 2005 for adding build time information to the About dialog of WinVNC and vncviewer.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2287">rev.2287</a>: Document updated to reflect the fact that TightVNC now can be compiled with Visual C++ 2005.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2286">rev.2286</a>: Added build time information to the About dialog of WinVNC.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2285">rev.2285</a>: Added build time information to the About dialog of the viewer.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2283">rev.2283</a>: Made the installation script work for all platforms again. On Windows 95, it will install one set of executables, on later versions - another set of executable files.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2282">rev.2282</a>: Installer script will require Windows 98 or Windows NT 4.0SP3 or later.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2279">rev.2279</a>: Java viewer files were not included by resource compiler when building with Visual C++ 2005.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2278">rev.2278</a>: Built-in Java viewer updated to its current version.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2276">rev.2276</a>: Fixed a serious bug introduced in <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2150">rev.2150</a>. After that &quot;fix&quot;, user passwords were not read if default password was set. This should be included to version 1.3.9 as well.
+<br>- <a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2272">rev.2272</a>: Solution for the situation when passwords were decoded and checked each time on updating the tray icon, once per second. Now we use cached values in ValidPasswordsSet() and ValidPasswordsEmpty() methods. Hopefully, this is the last change to be included in version 1.3.9.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2269">r2269</a></b> | <b>const_k</b> | <font color="#700000"><b>2007-04-26 18:15:51 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/tags/VERSION_1_3_9/vnc_winsrc</font> </li></ul>
+<p><blockquote>
+Tagging Win32 version 1.3.9.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2266">r2266</a></b> | <b>const_k</b> | <font color="#700000"><b>2007-04-26 17:55:21 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>BUILDING.txt, README-bin.txt, README.txt, TightVNC.iss, vncviewer/res/vncviewer.rc, winvnc/VNCHooks/VNCHooks.rc, winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Version strings updated, version 1.3.9.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2231">r2231</a></b> | <b>const_k</b> | <font color="#700000"><b>2007-02-18 00:29:33 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>BUILDING.txt, README-bin.txt, README.txt, TightVNC.iss, vncviewer/res/vncviewer.rc, winvnc/VNCHooks/VNCHooks.rc, winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Version strings changed for version 1.3.8.9.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2196">r2196</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-12-08 13:36:23 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/res/:<br>RfbProto.class, VncViewer.class, VncViewer.jar</font> </li></ul>
+<p><blockquote>
+Updated the Java viewer.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2162">r2162</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-11-30 20:12:15 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>BUILDING.txt, README-bin.txt, README.txt, TightVNC.iss, vncviewer/res/vncviewer.rc, winvnc/VNCHooks/VNCHooks.rc, winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Version numbers changed for version 1.3.8.5.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2089">r2089</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-16 11:13:28 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/TightVNC.iss</font> </li></ul>
+<p><blockquote>
+WhatsNew-devel document is not used any more.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2087">r2087</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-15 20:37:18 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/BUILDING.txt</font> </li></ul>
+<p><blockquote>
+Building information had to be updated to reflect including libraries in
+the source distribution.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2084">r2084</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-15 10:50:11 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncMenu.cpp, vncProperties.cpp, vncProperties.h</font> </li></ul>
+<p><blockquote>
+In certain cases we do not want to remember or restore current tab selection
+in the Properties dialog. In particular, tab selection is not restored or
+saved when editing the default properties. Also, tab selection is reset when
+connecting or disconnecting clients.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2083">r2083</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-14 16:20:30 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Improved labels for tray menu commands.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2078">r2078</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-10 17:03:37 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>InputHandlingControls.cpp, InputHandlingControls.h</font> </li></ul>
+<p><blockquote>
+Fixed a minor issue with keyboard focus initially set to &quot;Inactivity timeout&quot;
+control, in the Properties dialog, Server tab. Normally, keyboard focus
+should be set to the Password control instead.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2077">r2077</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-10 16:35:28 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>BUILDING.txt, README-bin.txt, README.txt, TightVNC.iss, vncviewer/res/vncviewer.rc, winvnc/VNCHooks/VNCHooks.rc, winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Version strings changed, version 1.3.8.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2076">r2076</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-10 15:27:56 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/res/vncviewer.rc</font> </li></ul>
+<p><blockquote>
+Copyright sign was missing in version info.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2075">r2075</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-10 15:07:12 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>BUILDING.txt, InstInfo.rtf, README-bin.txt, README.txt, TightVNC.iss, vncviewer/res/vncviewer.rc, winvnc/VNCHooks/VNCHooks.rc, winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Preparing for stable version numbering - replaced 1.3dev7 with 1.3.7,
+removed &quot;unstable&quot; labels etc.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2074">r2074</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-05 13:19:00 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncDesktop.cpp</font> </li></ul>
+<p><blockquote>
+Disabling mirror driver support under NT4 completely. Driver support was
+broken under NT4, it detected the driver and &quot;used&quot; it even if it was not
+installed. Thus, updates were not detected properly.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2073">r2073</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-05 12:12:24 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncClient.cpp, vncClient.h</font> </li></ul>
+<p><blockquote>
+Reverted changes to vncClient::m_inputblocked incremental semantics
+introduced in a previously applied patch from Lev Kazarkin of Demoforge, LLC.
+This should fix LocalInputsPriority feature that was broken by that patch.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2072">r2072</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-02 12:51:20 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/WinVNC.h</font> </li></ul>
+<p><blockquote>
+WinVNC usage help did not include information about the argument of the
+-sharearea option.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2071">r2071</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-02 12:36:48 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.cpp, vncMenu.cpp, vncProperties.h, vncService.cpp, vncService.h</font> </li></ul>
+<p><blockquote>
+New -sharearea command-line option of WInVNC is now fully functional.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2070">r2070</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-01 23:27:36 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.cpp, WinVNC.h, vncMenu.cpp, vncMenu.h, vncService.cpp, vncService.h</font> </li></ul>
+<p><blockquote>
+New -shareall and -shareprimary command-line options have been implemented.
+They work similar to -sharewindow but do not require arguments. These options
+do not start WinVNC - they control already running WinVNC instance instead.
+These modification also introduce the -sharearea option, but it's not fully
+functional at the moment.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2069">r2069</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-01 22:25:20 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/SharedDesktopArea.cpp</font> </li></ul>
+<p><blockquote>
+Restoring correct state of the area selection window on cancelling the
+Properties dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2068">r2068</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-08-01 20:09:50 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>SharedDesktopArea.cpp, SharedDesktopArea.h, vncProperties.cpp, vncProperties.h</font> </li></ul>
+<p><blockquote>
+Improved and simplified the SharedDesktopArea class, removed related stuff
+from the Properties class. Now the changes are applied directly to the server
+object, and only on pressing Apply or Ok. Previously, the changes in the
+Display tab of the Properties dialog were applied immediately and remained
+active even on pressing Cancel. Obviously, that was incorrect.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2067">r2067</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-07-30 16:27:06 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/SharedDesktopArea.cpp</font> </li></ul>
+<p><blockquote>
+Changes only in code formatting and comments.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2065">r2065</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-15 20:57:19 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/:<br>[many files]</font> </li></ul>
+<p><blockquote>
+Built-in Java viewer updated to the latest version.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2062">r2062</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-15 11:49:13 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.rc, resource.h</font> </li></ul>
+<p><blockquote>
+GUI improvements in the Administration tab of the Properties dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2061">r2061</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-15 11:04:08 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncProperties.cpp</font> </li></ul>
+<p><blockquote>
+The &quot;Sharing&quot; tab of the Properties dialog renamed to &quot;Desktop&quot;.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2060">r2060</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-15 10:57:32 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.rc, resource.h</font> </li></ul>
+<p><blockquote>
+GUI improvements in the Query tab of the Properties dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2059">r2059</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-15 10:34:45 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.rc, resource.h</font> </li></ul>
+<p><blockquote>
+GUI improvements in the Hooks tab of the Properties dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2058">r2058</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-15 09:55:46 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>VideoDriver.cpp, VideoDriver.h</font> </li></ul>
+<p><blockquote>
+Updated heading comment and copyright strings.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2057">r2057</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-14 23:42:49 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>VNCHooks/VNCHooks.vcproj, WinVNC.sln, WinVNC.vcproj, libjpeg/libjpeg.vcproj, omnithread/omnithread.vcproj, zlib/zlib.vcproj</font> </li></ul>
+<p><blockquote>
+From Lev Kazarkin (DemoForge LLC):
+<br>- fixed WinVNC *.vcproj files for MSVC 7.1.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2056">r2056</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-14 23:28:38 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>vncviewer/libjpeg/libjpeg.vcproj, vncviewer/omnithread/omnithread.vcproj, vncviewer/vncviewer.dsw, vncviewer/vncviewer.sln, vncviewer/vncviewer.vcproj, vncviewer/zlib/zlib.vcproj, winvnc/VNCHooks/VNCHooks.dsp, winvnc/VNCHooks/VNCHooks.vcproj, winvnc/WinVNC.dsw, winvnc/WinVNC.sln, winvnc/WinVNC.vcproj, winvnc/libjpeg/libjpeg.vcproj, winvnc/omnithread/omnithread.vcproj, winvnc/zlib/zlib.vcproj</font> </li></ul>
+<p><blockquote>
+Fixed end-of-line characters.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2055">r2055</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-14 22:43:59 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>SharedDesktopArea.cpp, VideoDriver.cpp, VideoDriver.h, vncDesktop.cpp, vncDesktop.h, vncEncoder.cpp, vncServer.cpp, vncServer.h</font> </li></ul>
+<p><blockquote>
+Another set of changes by Lev Kazarkin (DemoForge LLC):
+<br>- fixed bug with lost notifications from Mirage driver;
+<br>- fixed bugs with CopyRect processing;
+<br>- added support for CopyRect notifications from Mirage driver (more accurate and more powerful);
+<br>- added support for NT4 version of Mirage driver.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2054">r2054</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-06-14 21:32:21 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>IncomingConnectionsControls.cpp, vncClient.cpp, vncMenu.h, vncProperties.cpp, vncProperties.h, vncServer.cpp, vncServer.h</font> </li></ul>
+<p><blockquote>
+More accurate password handling - now the server code tries to distinguish
+between &quot;empty&quot; and &quot;unset&quot; passwords better.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2052">r2052</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-23 18:42:43 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>rfb/rfbproto.h, vncviewer/ClientConnection.cpp, vncviewer/ClientConnection.h, vncviewer/ClientConnectionFile.cpp, winvnc/vncClient.cpp, winvnc/vncProperties.cpp, winvnc/vncProperties.h, winvnc/vncServer.cpp, winvnc/vncServer.h</font> </li></ul>
+<p><blockquote>
+Removed the code for &quot;UnixLogin&quot; and &quot;External&quot; authentication. These two
+were never officially supported in the mainstream version anyway.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2051">r2051</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-23 13:46:22 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>IncomingConnectionsControls.cpp, WinVNC.rc, vncProperties.cpp, vncProperties.h</font> </li></ul>
+<p><blockquote>
+Now we remember and restore previously selected tab of the Properties dialog.
+Also, keyboard focus handling in the same dialog is slightly improved.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2050">r2050</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-23 11:57:47 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Improved layout of the &quot;Sharing&quot; tab of the Properties dialog. Added a context
+help message for the &quot;Share primary display&quot; option.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2049">r2049</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-23 10:31:27 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/resource.h</font> </li></ul>
+<p><blockquote>
+Made control IDs unique, to resolve problems with context help.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2048">r2048</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-22 21:45:49 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>MatchWindow.cpp, PollControls.cpp, SharedDesktopArea.cpp, SharedDesktopArea.h, VSocket.cpp, VideoDriver.cpp, VideoDriver.h, WinVNC.dsp, WinVNC.rc, resource.h, vncBuffer.cpp, vncBuffer.h, vncClient.cpp, vncClient.h, vncDesktop.cpp, vncDesktop.h, vncEncodeZlibHex.cpp, vncEncoder.cpp, vncKeymap.cpp, vncMenu.cpp, vncProperties.cpp, vncProperties.h, vncRegion.cpp, vncRegion.h, vncServer.cpp, vncServer.h, vncService.cpp</font> </li></ul>
+<p><blockquote>
+Applied a set of changes by Lev Kazarkin (DemoForge LLC):
+<br>- added support for DfMirage driver direct screen access mode;
+<br>- added support for multiple monitors;
+<br>- added workaround for Windows bug with &quot;wrong order of monitors&quot;;
+<br>- extended GUI for screen sharing area;
+<br>- fixed some minor bugs.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2046">r2046</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-20 12:04:34 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/BUILDING.txt</font> </li></ul>
+<p><blockquote>
+Typos fixed.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2045">r2045</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-10 21:09:12 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/ClientConnection.cpp</font> </li></ul>
+<p><blockquote>
+Fixed a problem with not setting proper window size/position revealed while
+testing under Win95.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2044">r2044</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-10 20:19:27 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/ClientConnectionFullScreen.cpp</font> </li></ul>
+<p><blockquote>
+Better values for scrolling parameters in the full-screen mode.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2043">r2043</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-10 19:35:35 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/VNCOptions.cpp</font> </li></ul>
+<p><blockquote>
+Fixed a problem with not enabling JPEG compression by default.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2041">r2041</a></b> | <b>const_k</b> | <font color="#700000"><b>2006-04-05 10:18:55 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.h, vncDesktop.cpp, vncMenu.cpp, vncServer.cpp, vncServer.h</font> </li></ul>
+<p><blockquote>
+Finally, the problem <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1104846&group_id=14067&atid=114067">#1104846</a> with wallpaper removal has been solved,
+hopefully without side effects this time.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2027">r2027</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-08-06 14:36:06 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WallpaperUtils.cpp, WallpaperUtils.h, vncDesktop.cpp, vncMenu.cpp, vncMenu.h</font> </li></ul>
+<p><blockquote>
+Fixed major problem with disconnecting on screen locking, user logoff/logon,
+in the service mode. Also, this fixes the problem with restoring wallpaper.
+The bugs fixed are those reported in <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1250353&group_id=14067&atid=114067">#1250353</a>, <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1243405&group_id=14067&atid=114067">#1243405</a>, <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1242752&group_id=14067&atid=114067">#1242752</a>, <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1242689&group_id=14067&atid=114067">#1242689</a>,
+<a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1233397&group_id=14067&atid=114067">#1233397</a> and maybe others. From the other side, the fix reverts the behavior
+described in <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1104846&group_id=14067&atid=114067">#1104846</a>.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2024">r2024</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-07-06 01:04:00 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/InstInfo.rtf</font> </li></ul>
+<p><blockquote>
+Changed year in the copyright statement.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2023">r2023</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-07-05 19:57:55 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>BUILDING.txt, README-bin.txt, README.txt, TightVNC.iss, vncviewer/res/vncviewer.rc, winvnc/VNCHooks/VNCHooks.rc, winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Version strings changed, version 1.3dev7.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2016">r2016</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-07-03 14:09:42 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/res/:<br>OptionsFrame.class, VncCanvas.class, VncViewer.jar</font> </li></ul>
+<p><blockquote>
+Updated built-in Java viewer to its latest version.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2005">r2005</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-17 23:49:18 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/InstInfo.rtf</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;A typo fixed.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2002">r2002</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-10 14:08:10 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>IncomingConnectionsControls.cpp, VNCHelp.cpp, WinVNC.rc, resource.h</font> </li></ul>
+<p><blockquote>
+Fixed minor issues in the Properties dialog - added context help for controls
+that did not have it, removed unused resource constants etc.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2001">r2001</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-10 12:57:56 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/res/vncviewer.rc</font> </li></ul>
+<p><blockquote>
+Added context help messages in the file transfers dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=2000">r2000</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-10 12:32:00 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/res/vncviewer.rc</font> </li></ul>
+<p><blockquote>
+Fixed the file transfer dialog - made path edit controls read-only, disabled
+made multiple selection in file lists, fixed group and tab stop attributes
+for controls, changed the caption of the Browse dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1998">r1998</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-09 22:37:35 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncDesktop.cpp, vncDesktop.h</font> </li></ul>
+<p><blockquote>
+Fixed the problem with carriage return/linefeed conversion for clipboard
+data, bug <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=875016&group_id=14067&atid=114067">#875016</a>.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1995">r1995</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-09 19:30:23 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncClient.cpp</font> </li></ul>
+<p><blockquote>
+Disallowing clipboard transfers when &quot;Block remote input events&quot; is set. This
+fixes bug <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1033570&group_id=14067&atid=114067">#1033570</a>.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1993">r1993</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-09 18:46:28 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncDesktop.cpp, vncDesktop.h</font> </li></ul>
+<p><blockquote>
+Removed the code for &quot;desktop optimizations&quot; that was rather harmful than
+useful. This should fix the bugs <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=987546&group_id=14067&atid=114067">#987546</a> and <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1082899&group_id=14067&atid=114067">#1082899</a>.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1991">r1991</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-09 17:37:23 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WallpaperUtils.cpp, WallpaperUtils.h, vncDesktop.cpp, vncDesktop.h, vncMenu.cpp, vncMenu.h</font> </li></ul>
+<p><blockquote>
+Fixed a problem with wallpaper and ActiveDesktop removal, bug <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1104846&group_id=14067&atid=114067">#1104846</a>.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1989">r1989</a></b> | <b>const_k</b> | <font color="#700000"><b>2005-02-02 20:34:17 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>VNCHelp.cpp, VNCHelp.h, WinVNC.cpp, vncProperties.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Simplified interface to HtmlHelp. This should fix
+the bug <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=944429&group_id=14067&atid=114067">#944429</a>.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1979">r1979</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-12-24 23:59:07 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/ClientConnection.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Fixed toolbar background color and toolbar position.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1977">r1977</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-12-18 16:27:45 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Fixed the issue with port number edit boxes that were
+labeled incorrectly in the Properties dialog.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1967">r1967</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-18 21:33:21 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>BUILDING.txt, README-bin.txt, README.txt, TightVNC.iss, vncviewer/res/vncviewer.rc, winvnc/VNCHooks/VNCHooks.rc, winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Version strings changed, version 1.3dev6.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1966">r1966</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-18 21:00:47 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/:<br>FileTransfer.cpp, VNCviewerApp32.cpp, VNCviewerApp32.h, res/vncviewer.rc, vncviewer.cpp</font> </li></ul>
+<p><blockquote>
+Enabled keyboard navigation in the file transfer dialog. Also, now it's
+possible to close the dialog with the Escape key. Finally, the tab order was
+slightly changed in the same dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1965">r1965</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-18 18:54:56 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/FileTransfer.cpp</font> </li></ul>
+<p><blockquote>
+Improved texts for messages in file transfer in the viewer, and slightly
+improved error analysis.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1964">r1964</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-18 16:12:36 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>vncviewer/ClientConnection.cpp, vncviewer/FileTransfer.cpp, vncviewer/FileTransfer.h, winvnc/vncClient.cpp</font> </li></ul>
+<p><blockquote>
+Added processing for rfbFileUploadCancel and rfbFileDownloadFailed messages.
+Added checking for CreateFile() return value, in both file upload and
+download.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1963">r1963</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-18 13:13:29 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/FileTransfer.cpp</font> </li></ul>
+<p><blockquote>
+Fixes in code fofmatting only.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1959">r1959</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-17 11:58:59 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncClient.cpp</font> </li></ul>
+<p><blockquote>
+Improved texts for messages in file transfer, on the server side.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1957">r1957</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-17 01:28:26 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/:<br>ClientConnection.cpp, FileTransfer.cpp</font> </li></ul>
+<p><blockquote>
+Now the viewer checks server's capabilities and does not ever use
+non-standard protocol messages not supported by the server. This change
+affects file transfers only, as other features do not use non-standard
+protocol messages.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1956">r1956</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-17 00:00:47 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/ClientConnectionFullScreen.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Changed text message shown on switching to the
+full-screen mode. Now the message list all the basic methods to return from
+full screen.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1955">r1955</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-16 23:55:29 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/:<br>vncviewer/FileTransfer.cpp, winvnc/vncClient.cpp</font> </li></ul>
+<p><blockquote>
+Modified patch from the head branch - &quot;Changed the way the list of drives
+is read, in both server and viewer. New code does not filter out any disk
+types. This should fix the file transfers bug described in <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=865272&group_id=14067&atid=114067">#865272</a> and
+<a href="http://sourceforge.net/tracker/index.php?func=detail&aid=1042557&group_id=14067&atid=114067">#1042557</a>.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1954">r1954</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-16 23:38:17 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncClient.cpp, vncClient.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Added locking to prevent sending partial framebuffer
+updates mixed with other messages.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1953">r1953</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-16 23:09:07 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>VNCHooks/VNCHooks.cpp, VNCHooks/VNCHooks.h, vncDesktop.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch:
+<br>- updated vnchooks to allow for separate target window handles for local
+keyboard and mouse event hooks
+<br>- updated vnchooks api so setting priority hooks needs window handle to be
+passed in
+<br>- updated version of vnchooks in vnchooks.rc to indicate api change
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1952">r1952</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-16 22:45:33 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncClient.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;applied jeffg's patch to vncClient which fixes the
+one pixel mouse movement&quot;.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1951">r1951</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-16 22:36:14 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>AdministrationControls.cpp, AdministrationControls.h, IncomingConnectionsControls.cpp, IncomingConnectionsControls.h, InputHandlingControls.cpp, InputHandlingControls.h, PollControls.cpp, PollControls.h, QuerySettingsControls.cpp, QuerySettingsControls.h, SharedDesktopArea.cpp, SharedDesktopArea.h</font> </li></ul>
+<p><blockquote>
+From the head branch - added heading comments in files appeared recently.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1947">r1947</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-11-16 19:59:11 +0600</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncProperties.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Fixed a bug with setting incorrect default values for
+properties if the user has no write access to the HKEY_LOCAL_MACHINE registry
+hive&quot;.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1908">r1908</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-10-11 12:32:22 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/res/:<br>VncCanvas.class, VncViewer.jar</font> </li></ul>
+<p><blockquote>
+New version of the Java viewer.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1868">r1868</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-31 20:20:12 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>PollControls.cpp, vncDesktop.h, vncServer.cpp, vncServer.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Implemented an indicator of the mirror driver status.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1867">r1867</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-31 20:17:50 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Layout changes in the Hooks tab of the Properties
+dialog.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1866">r1866</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-31 20:04:11 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/WinVNC.rc</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Minor layout changes in the Administration tab of the
+Properties dialog.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1865">r1865</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-31 19:56:40 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncDesktop.cpp, vncDesktop.h, vncServer.cpp, vncServer.h</font> </li></ul>
+<p><blockquote>
+Merged redesigned and bugfixed version of the BlankScreen feature from the
+head branch. Also from the head branch - &quot;Moved m_polling_flag from vncServer
+to vncDesktop, and chose a better name for one variable in vncServer.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1864">r1864</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-31 19:40:28 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncServer.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Minor memory leak has been fixed.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1851">r1851</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-24 17:44:27 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.rc, vncProperties.cpp, vncProperties.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Reduced the number of tabs in the Properties dialog.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1841">r1841</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-22 15:58:12 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>VNCHelp.cpp, WinVNC.rc</font> </li></ul>
+<p><blockquote>
+Context help for the Properties dialog controls, merged from the head branch.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1840">r1840</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-22 15:54:15 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncProperties.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - Changed &quot;WinVNC&quot; to &quot;TightVNC Server&quot; in the caption
+of the Properties dialog.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1839">r1839</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-22 15:40:52 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>IncomingConnectionsControls.cpp, vncClient.cpp, vncDesktop.cpp, vncProperties.cpp, vncProperties.h, vncServer.cpp, vncServer.h</font> </li></ul>
+<p><blockquote>
+Ported the &quot;blank screen&quot; feature from the head branch.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1808">r1808</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-07 19:30:16 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/:<br>ClientConnection.cpp, VNCOptions.cpp, VNCOptions.h, res/vncviewer.rc</font> </li></ul>
+<p><blockquote>
+Ported the auto scaling mode from the head branch.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1805">r1805</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-08-01 14:25:05 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.rc, resource.h</font> </li></ul>
+<p><blockquote>
+From the head branch - In the Properties dialog, added new option &quot;Blank
+screen on client connections&quot; (non-functional yet).
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1803">r1803</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-31 17:45:59 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.rc, resource.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Fixed a problems with previous commit, and added
+a missing label in the Query Settings tab in Properties.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1801">r1801</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-31 16:12:39 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.rc, resource.h, vncDesktop.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - Implemented support for the option &quot;Don't use mirror
+display driver even if available&quot;.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1798">r1798</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-30 20:18:47 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>AdministrationControls.cpp, WinVNC.rc, resource.h, vncProperties.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - Removed unused checkbox &quot;Enable built-in Java viewer&quot;,
+implemented new checkbox &quot;Enable applet params in URLs&quot; corresponding to
+EnableURLParams registry setting.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1795">r1795</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-29 17:12:51 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>SharedDesktopArea.cpp, SharedDesktopArea.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Added MatchWindow as an optional member pointer.
+Reduced duplicate code via changes to Init(). Normalized FullScreen(),
+SharedWindow() and SharedScreen(). A modified patch from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1793">r1793</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 17:34:46 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncProperties.cpp, vncProperties.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Removed HORIZONLIVE ifdefs, removed
+m_pref_LiveShareKey. A patch from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1791">r1791</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 16:36:42 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/vncClient.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Removed HORIZONLIVE ifdefs in favor of server settings, a patch
+from HorizonLive.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1789">r1789</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 16:30:33 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>vncServer.cpp, vncServer.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Moved GetLiveShareKey(), SetLiveShareKey() to horizonProperties,
+added initialization for m_enable_file_transfers. A patch from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1787">r1787</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 16:14:29 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/stdhdrs.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Changed HORIZONLIVE Log() so that a file is not
+created in C:\, a patch from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1785">r1785</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 16:05:43 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WinVNC.cpp, WinVNC.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Removed HORIZONLIVE ifdefs in favor of separate main
+function, a patch from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1783">r1783</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 15:45:40 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WallpaperUtils.cpp, WallpaperUtils.h, WinVNC.dsp, vncMenu.cpp, vncMenu.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Moved wallpaper functions to new WallpaperUtils
+files, removed HORIZONLIVE ifdefs. A patch from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1782">r1782</a></b> | <b>(no author)</b> | <font color="#700000"><b>2004-07-28 15:45:40 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>WallpaperUtils.cpp, WallpaperUtils.h</font> </li></ul>
+<p><blockquote>
+This commit was manufactured by cvs2svn to create branch
+'BRANCH_1_3_STABLE'.
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1781">r1781</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 15:42:14 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/WinVNC.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Solving possible problems with multiple inclusions of
+WinVNC.h, a patch from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1779">r1779</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 14:20:22 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>Log.cpp, Log.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Made SetFile() accept const char, a patch from
+HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1777">r1777</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-28 12:44:05 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/:<br>VSocket.cpp, VSocket.h, VTypes.h</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Applied fixes to type declarations from HorizonLive.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1772">r1772</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-22 14:37:51 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/ClientConnection.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Minor cleanups in the viewer's system menu labels.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1771">r1771</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-22 14:35:32 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/winvnc/BUILDING.txt</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Removed an outdated file.&quot;
+</blockquote></p>
+<p><b><a href="http://vnc-tight.svn.sourceforge.net/viewvc/vnc-tight?view=rev&revision=1770">r1770</a></b> | <b>const_k</b> | <font color="#700000"><b>2004-07-22 14:33:49 +0700</b></font></p>
+<ul><li><font color="#007000">/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/vncviewer/VNCOptions.cpp</font> </li></ul>
+<p><blockquote>
+From the head branch - &quot;Fixed the bug <a href="http://sourceforge.net/tracker/index.php?func=detail&aid=975886&group_id=14067&atid=114067">#975886</a> - the setting &quot;Allow JPEG
+Compression&quot; was not saved in .vnc files.&quot;
+</blockquote></p>
+<p><b>[change log truncated at 100 records]</b></p>
+            </td></tr>
+          </table>
+        </td><td width="2" bgcolor="#C49A82">
+          <img src="brpixel.jpg" width="2" height="1" alt="">
+        </td><td width="6" valign="top" bgcolor="#F8EECB">
+          &nbsp;
+        </td><td width="128" valign="top" bgcolor="#F8EECB">
+          <table border="0" width="100%" cellspacing="0" cellpadding="8">
+            <tr><td align="center"><a href="http://www.tightvnc.com/"><img
+              src="tightvnc-logo.jpg" width="128" height="128" border="0"
+              alt="[LOGO]"></a></td></tr>
+            <tr><td align="center">
+              <table align="center" border="0"><tr><td nowrap>
+  <p><b>TightVNC:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="index.html">main page</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="download.html"><b>download</b></a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="support.html">get support</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="contribute.html">contribute</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="contact.html">contact us</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="people.html">people</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="sitemap.html">site map</a><br>
+  <p><b>Information:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="intro.html">introduction</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://www.tightvnc.com/screenshots.html">screenshots</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="docs.html">documentation</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="faq.html">FAQ</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="lists.html">mailing lists</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="changelogs.html">change logs</a><br>
+  <p><b>Development:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="bugs.html">report bugs</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="rfe.html">suggest features</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://sourceforge.net/tracker/?func=add&group_id=14067&atid=314067">submit patches</a><br>
+  <p><b>Links:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://www.tightvnc.com/">primary site</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="othersites.html">other sites</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="related.html">related software</a><br>
+              </td></tr></table>
+            </td></tr>
+          </table>
+        </td><td width="6" bgcolor="#F8EECB">
+          &nbsp;
+        </td></tr>
+    </table> 
+  </body>
+</html>
+<!-- Guava tools by Steve Morphet 1999-2001. -->

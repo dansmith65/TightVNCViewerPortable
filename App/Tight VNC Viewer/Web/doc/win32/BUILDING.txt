@@ -1,0 +1,57 @@
+
+  TightVNC version 1.3.9
+  BUILDING vncviewer and WinVNC
+
+======================================================================
+
+  Building from the source distribution
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The source distribution is ready to compile, but the only compiler
+supported is MS Visual C++ 6.0. Workspace files (*.dsw) for this
+environment are included in the distribution.
+
+Building with Borland C++ 5.5 compiler is not supported any more,
+sorry.
+
+  Building from the CVS
+  ~~~~~~~~~~~~~~~~~~~~~
+
+The sources in the CVS do not include third-party libraries required
+for successful compilation. These are zlib and JPEG libraries freely
+available in the source form from the following locations:
+
+  ftp://ftp.uu.net/graphics/jpeg/jpegsrc.v6b.tar.gz
+  http://prdownloads.sourceforge.net/libpng/zlib-1.1.4.tar.gz
+
+Please download these libraries prior to compilation. Note that these
+archives are in tar+gzip format not very popular in Windows
+environments. To unpack the files, either install appropriate
+extractors available for Windows platforms, or unpack them on
+Unix-like machines.
+
+After you have downloaded and unpacked the libraries, place their
+source files to the locations listed below, NOT overriding existing
+files:
+
+  zlib library:
+    vnc_winsrc/vncviewer/zlib/
+    vnc_winsrc/winvnc/zlib/
+
+  JPEG library:
+    vnc_winsrc/vncviewer/libjpeg/
+    vnc_winsrc/winvnc/libjpeg/
+
+Also, TightVNC compilation requires Microsoft Html Help SDK which can
+be freely downloaded from this page:
+
+  http://msdn.microsoft.com/library/en-us/htmlhelp/html/hwMicrosoftHTMLHelpDownloads.asp
+
+Only two files from the Html Help SDK are required for compilation,
+HtmlHelp.h and HtmlHelp.lib. Copy both files to the following folders:
+
+    vnc_winsrc/vncviewer/
+    vnc_winsrc/winvnc/
+
+After zlib, JPEG and HtmlHelp files are in place, the source is ready
+to compile with MS Visual C++ 6.0.

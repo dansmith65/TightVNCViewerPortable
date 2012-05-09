@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>TightVNC Development Roadmap</title>
+    <link rel="stylesheet" href="tightvnc.css">
+    <meta name="author" content="Constantin Kaplinsky">
+    <meta name="generator" content="XEmacs + Ruby + Guava tools">
+    <meta name="description"
+          content="TightVNC - An enhanced VNC version with many new features, improvements,
+                   optimizations and bugfixes.">
+    <meta name="keywords"
+          content="vnc, remote desktop, remote control, remote administration, compression">
+  </head>
+  <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FDFAEC"
+    link="#9A1614" alink="#FF4040" vlink="#8A7634">
+    <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="8">
+          &nbsp;
+        </td><td valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="16">
+            <tr><td valign="top">
+  <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr><td width="99%">
+      <table width="100%" bgcolor="#C49A82" border="0" cellspacing="0" cellpadding="2">
+        <tr><td align="center" valign="middle">
+          <table width="100%" border="0" bgcolor="#F8EECB" align="center" cellspacing="0"
+            cellpadding="6">
+            <tr><td align="center" valign="middle">
+              <font size="+2"><b>TightVNC Development Roadmap</b></font>
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td><td width="1%">&nbsp;
+    </td><td align="right" valign="middle">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="right" valign="middle"><a href="http://www.tightvnc.com/donate.html"><img
+            border="0" hspace="8" src="donate.jpg" width="96" height="32"
+            alt="[DONATE]"></a></td>
+          <td nowrap align="center" valign="middle"><b>Improve TightVNC:</b><br><a
+            href="http://www.tightvnc.com/donate.html">Make a Donation</a>!</td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+  <br>
+  <h3>Branches of Development</h3>
+  <table width="100%" bgcolor="#92A97B" border=0 cellspacing=1 cellpadding=5>
+    <tr bgcolor="#F8EECB">
+      <th>Branch</th><th>Version<br>Numbering</th><th>Latest Version</th><th>Paths in Subversion
+        (<a href="http://sourceforge.net/svn/?group_id=14067">see more
+        info</a>)</th><th>Status</th>
+    </tr><tr bgcolor="#FCF8E2">
+      <td><font color="#007000"><b>Stable branch</b></font></td><td>1.2.x</td><td><a
+        href="download.html#stable">1.3.9</a></td><td><tt><a
+        href="http://svn.sourceforge.net/viewvc/vnc-tight/orig/branches/BRANCH_1_2_STABLE/">orig/branches/BRANCH_1_2_STABLE</a></tt></td><td>abandoned</td>
+    </tr><tr bgcolor="#FCF8E2">
+      <td><font color="#007000"><b>Release Candidate branch</b></font></td><td>1.3.x</td><td><a
+        href="download.html#devel">TIGHTVNC_DEVEL_VERSION</a></td><td><tt><a
+        href="http://svn.sourceforge.net/viewvc/vnc-tight/orig/branches/BRANCH_1_3_STABLE/vnc_winsrc/">orig/branches/BRANCH_1_3_STABLE/vnc_winsrc</a></tt><br><tt><a
+        href="http://svn.sourceforge.net/viewvc/vnc-tight/orig/trunk/vnc_unixsrc/">orig/trunk/vnc_unixsrc</a></tt><br><tt><a
+        href="http://svn.sourceforge.net/viewvc/vnc-tight/orig/trunk/vnc_javasrc/">orig/trunk/vnc_javasrc</a></tt></td><td><font color="#007000"><b>active</b></font></td>
+    </tr><tr bgcolor="#FCF8E2">
+      <td><font color="#007000"><b>Development branch</b></font><br>(Win32 part only)</td><td>1.4.x</td><td>none
+        released</td><td><tt><a
+        href="http://svn.sourceforge.net/viewvc/vnc-tight/orig/trunk/vnc_winsrc/">orig/trunk/vnc_winsrc</a></tt></td><td>pending</td>
+    </tr><tr bgcolor="#FCF8E2">
+      <td>New <font color="#007000"><b>VNC4-based code</b></font><br>(Java viewer not included)</td><td>1.5.x</td><td>none
+        released</td><td><tt><a
+        href="http://svn.sourceforge.net/viewvc/vnc-tight/trunk/">trunk</a></tt></td><td><font color="#007000"><b>active</b></font></td>
+    </tr>
+  </table>
+  <h3>Roadmap</h3>
+  <table width="100%" bgcolor="#92A97B" border=0 cellspacing=1 cellpadding=5>
+    <tr bgcolor="#F8EECB">
+      <th>Milestone</th><th>Version</th><th>Estimated<br>Date</th><th>To Do List</th>
+    </tr><tr bgcolor="#FCF8E2"><td align="center" colspan="4">&nbsp;<br>[ The roadmap is under
+      development... ]<br>&nbsp;</td></tr>
+  </table>
+  <h3>Current Activity (as of Oct 5, 2006)</h3>
+  <p>
+    <font color="#007000"><b>Release Candidate branch:</b></font>
+  </p>
+  <ul><li>upgrading RFB protocol version from 3.7 to 3.8.</li></ul>
+  <p>
+    <font color="#007000"><b>VNC4-based code:</b></font>
+  </p>
+  <ul><li>adding high-quality client-side scaling.</li></ul>
+            </td></tr>
+          </table>
+        </td><td width="2" bgcolor="#C49A82">
+          <img src="brpixel.jpg" width="2" height="1" alt="">
+        </td><td width="6" valign="top" bgcolor="#F8EECB">
+          &nbsp;
+        </td><td width="128" valign="top" bgcolor="#F8EECB">
+          <table border="0" width="100%" cellspacing="0" cellpadding="8">
+            <tr><td align="center"><a href="http://www.tightvnc.com/"><img
+              src="tightvnc-logo.jpg" width="128" height="128" border="0"
+              alt="[LOGO]"></a></td></tr>
+            <tr><td align="center">
+              <table align="center" border="0"><tr><td nowrap>
+  <p><b>TightVNC:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="index.html">main page</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="download.html"><b>download</b></a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="support.html">get support</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="contribute.html">contribute</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="contact.html">contact us</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="people.html">people</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="sitemap.html">site map</a><br>
+  <p><b>Information:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="intro.html">introduction</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://www.tightvnc.com/screenshots.html">screenshots</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="docs.html">documentation</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="faq.html">FAQ</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="lists.html">mailing lists</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="changelogs.html">change logs</a><br>
+  <p><b>Development:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="bugs.html">report bugs</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="rfe.html">suggest features</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://sourceforge.net/tracker/?func=add&group_id=14067&atid=314067">submit patches</a><br>
+  <p><b>Links:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://www.tightvnc.com/">primary site</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="othersites.html">other sites</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="related.html">related software</a><br>
+              </td></tr></table>
+            </td></tr>
+          </table>
+        </td><td width="6" bgcolor="#F8EECB">
+          &nbsp;
+        </td></tr>
+    </table> 
+  </body>
+</html>
+<!-- Guava tools by Steve Morphet 1999-2001. -->

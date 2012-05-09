@@ -1,0 +1,170 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>TightVNC: Manual Page for vncpasswd(1)</title>
+    <link rel="stylesheet" href="tightvnc.css">
+    <meta name="author" content="Constantin Kaplinsky">
+    <meta name="generator" content="XEmacs + Ruby + Guava tools">
+    <meta name="description"
+          content="TightVNC - An enhanced VNC version with many new features, improvements,
+                   optimizations and bugfixes.">
+    <meta name="keywords"
+          content="vnc, remote desktop, remote control, remote administration, compression">
+  </head>
+  <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" bgcolor="#FDFAEC"
+    link="#9A1614" alink="#FF4040" vlink="#8A7634">
+    <table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="8">
+          &nbsp;
+        </td><td valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="16">
+            <tr><td valign="top">
+  <table width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr><td width="99%">
+      <table width="100%" bgcolor="#C49A82" border="0" cellspacing="0" cellpadding="2">
+        <tr><td align="center" valign="middle">
+          <table width="100%" border="0" bgcolor="#F8EECB" align="center" cellspacing="0"
+            cellpadding="6">
+            <tr><td align="center" valign="middle">
+              <font size="+2"><b>vncpasswd(1) Manual Page</b></font>
+            </td></tr>
+          </table>
+        </td></tr>
+      </table>
+    </td><td width="1%">&nbsp;
+    </td><td align="right" valign="middle">
+      <table border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td align="right" valign="middle"><a href="http://www.tightvnc.com/donate.html"><img
+            border="0" hspace="8" src="donate.jpg" width="96" height="32"
+            alt="[DONATE]"></a></td>
+          <td nowrap align="center" valign="middle"><b>Improve TightVNC:</b><br><a
+            href="http://www.tightvnc.com/donate.html">Make a Donation</a>!</td>
+        </tr>
+      </table>
+    </td></tr>
+  </table>
+  <br>
+  <p>See the <a href="doc/man/vncpasswd.man">original file</a> (in Unix <tt>troff</tt> format) from which this document was generated.</p>
+<h3>NAME</h3>
+vncpasswd - set passwords for VNC server
+<h3>SYNOPSIS</h3>
+<font color="#007000"><b>vncpasswd</b></font>
+[<font color="#700070"><i>file</i></font>]
+<BR>
+<font color="#007000"><b>vncpasswd</b></font>
+<font color="#700070"><i>-t</i></font>
+<BR>
+<font color="#007000"><b>vncpasswd</b></font>
+<font color="#700070"><i>-f</i></font>
+<BR>
+<h3>DESCRIPTION</h3>
+The <font color="#007000"><b>vncpasswd</b></font> utility should be used to create and change
+passwords for the TightVNC server authentication. <font color="#007000"><b>Xvnc</b></font> uses such
+passwords when started with the <font color="#007000"><b>-rfbauth</b></font> command-line option
+(or when started from the <font color="#007000"><b>vncserver</b></font> script).
+<P>
+<font color="#007000"><b>vncpasswd</b></font> allows to enter either one or two passwords. The first
+password is the primary one, the second password can be used for
+view-only authentication. <font color="#007000"><b>Xvnc</b></font> will restrict mouse and keyboard
+input from clients who authenticated with the view-only password. The
+<font color="#007000"><b>vncpasswd</b></font> utility asks interactively if it should set the second
+password.
+<P>
+The password file name defaults to <font color="#007000"><b>$HOME/.vnc/passwd</b></font> unless the
+<font color="#007000"><b>-t</b></font> command-line option was used (see the OPTIONS section
+below). The <font color="#007000"><b>$HOME/.vnc/</b></font> directory will be created if it does not
+exist.
+<P>
+Each password has to be longer than five characters (unless the
+<font color="#007000"><b>-f</b></font> command-line option was used, see its description below). 
+Only the first eight characters are significant. If the primary
+password is too short, the program will abort. If the view-only
+password is too short, then only the primary password will be saved.
+<P>
+Unless a file name was provided in the command-line explicitly, this
+utility may perform certain sanity checks to prevent writing a
+password file into some hazardous place.
+<P>
+If at least one password was saved successfully, <font color="#007000"><b>vncpasswd</b></font> will
+exit with status code 0. Otherwise the returned status code will be
+set to 1.
+<BR>
+<h3>OPTIONS</h3>
+<DL COMPACT>
+<DT><font color="#007000"><b>-t</b></font><DD>
+Write passwords into <font color="#007000"><b>/tmp/$USER-vnc/passwd</b></font>, creating the
+<font color="#007000"><b>/tmp/$USER-vnc/</b></font> directory if it does not exist, and checking the
+permissions on that directory (the mode must be 700). This option can
+help to improve security when your home partition may be shared via
+network (e.g. when using NFS).
+<DT><font color="#007000"><b>-f</b></font><DD>
+Filter mode. Read plain-text passwords from stdin, write encrypted
+versions to stdout. One or two passwords (full-control and view-only)
+can be supplied in the input stream, newline terminates a password. 
+Note that in the filter mode, short or even empty passwords will be
+silently accepted.
+</DL>
+<h3>SEE ALSO</h3>
+<b><a href="vncserver.1.html">vncserver</a></b>(1), <b><a href="Xvnc.1.html">Xvnc</a></b>(1), <b><a href="vncviewer.1.html">vncviewer</a></b>(1),
+<b><a href="vncconnect.1.html">vncconnect</a></b>(1)
+<h3>AUTHORS</h3>
+Original VNC was developed in AT&amp;T Laboratories Cambridge. TightVNC
+additions were implemented by Constantin Kaplinsky. Many other people
+participated in development, testing and support.
+<P>
+<font color="#007000"><b>Man page authors:</b></font>
+<BR>
+Marcus Brinkmann &lt;Marcus.Brinkmann at ruhr-uni-bochum.de&gt;,
+<BR>
+Tim Waugh &lt;twaugh at redhat.com&gt;,
+<BR>
+Constantin Kaplinsky &lt;const at tightvnc.com&gt;
+<P>
+            </td></tr>
+          </table>
+        </td><td width="2" bgcolor="#C49A82">
+          <img src="brpixel.jpg" width="2" height="1" alt="">
+        </td><td width="6" valign="top" bgcolor="#F8EECB">
+          &nbsp;
+        </td><td width="128" valign="top" bgcolor="#F8EECB">
+          <table border="0" width="100%" cellspacing="0" cellpadding="8">
+            <tr><td align="center"><a href="http://www.tightvnc.com/"><img
+              src="tightvnc-logo.jpg" width="128" height="128" border="0"
+              alt="[LOGO]"></a></td></tr>
+            <tr><td align="center">
+              <table align="center" border="0"><tr><td nowrap>
+  <p><b>TightVNC:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="index.html">main page</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="download.html"><b>download</b></a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="support.html">get support</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="contribute.html">contribute</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="contact.html">contact us</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="people.html">people</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="sitemap.html">site map</a><br>
+  <p><b>Information:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="intro.html">introduction</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://www.tightvnc.com/screenshots.html">screenshots</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="docs.html">documentation</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="faq.html">FAQ</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="lists.html">mailing lists</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="changelogs.html">change logs</a><br>
+  <p><b>Development:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="bugs.html">report bugs</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="rfe.html">suggest features</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://sourceforge.net/tracker/?func=add&group_id=14067&atid=314067">submit patches</a><br>
+  <p><b>Links:</b><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="http://www.tightvnc.com/">primary site</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="othersites.html">other sites</a><br>
+  <img src="ldot.jpg" width="8" height="8" hspace="4" alt="*"> <a href="related.html">related software</a><br>
+              </td></tr></table>
+            </td></tr>
+          </table>
+        </td><td width="6" bgcolor="#F8EECB">
+          &nbsp;
+        </td></tr>
+    </table> 
+  </body>
+</html>
+<!-- Guava tools by Steve Morphet 1999-2001. -->
