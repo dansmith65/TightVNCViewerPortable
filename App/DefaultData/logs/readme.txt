@@ -1,0 +1,1 @@
+If logging is enabled in TightVNC Viewer Configuration, then log files will be saved to %APPDATA%\TightVNC directory while the app is running. After closing TightVNC, the log files will be moved to this directory.A shortcut has been provided to go to the %APPDATA%\TightVNC directory.
